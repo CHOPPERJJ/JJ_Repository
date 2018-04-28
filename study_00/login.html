@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uniwell Itsm login</title>
+   <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<div class="content">
+    <div class="logo">
+        <img src="img/Uniwell_RGB_web_o.png"/></div>
+    <p>ITSM运维管理系统用户登录</p>
+    <div class="form-box">
+        <a id="showErrMsg" class=""></a>
+        <input class="input-text" type="text" name="userName" placeholder="用户名" id="userName" value="admin"/ ><br>
+        <input class="input-text" type="password" name="password" placeholder="密码" id="password" value="123456" /><br>
+        <div class="checkcode">
+            <input class="input-text" type="text" name="randCode" id="randCode" placeholder="验证码" maxlength="4"/>
+            <img id="randCodeImage" src="img/v-code.jpg" height="48" width="106"/>
+        </div>
+        <div class="rm">
+            <input id="sub" type="checkbox" class="check" checked="" >
+            <label for="sub">
+                <span class="icon"></span>
+                <span>记住密码</span>
+            </label>
+            <a href="loginController.do?goResetPwdMail" class="fg-passward">忘记密码？</a>
+        </div>
+        <input class="input-button" type="submit" value="登&nbsp录" id="but_login" onclick="checkUser()" >
+        <div class="text-c">
+            <p>Copyright © 2018 昆明优力威尔信息系统有限公司</p>
+        </div>
+        <div class="qr-logo">
+            <div class="apple">
+                <img src="img/Apple.png"/>
+            </div>
+            <div class="android">
+                <img src="img/android.png"/>
+            </div>
+        </div><br>
+        <div class="qr-code">
+            <div class="apple">
+                <img src="img/qrcode.png">
+            </div>
+            <div class="android">
+                <img src="img/qrcode.png">
+            </div>
+        </div><br>
+        <div class="qr-text">
+            <div class="apple">
+                <p>苹果客户端下载</p>
+            </div>
+            <div class="android">
+                <p>安卓客户端下载</p>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+</body>
+</html>

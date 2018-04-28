@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浏览器对象计数器计数跳转</title>
+    <meta http-equiv="Content-Type" charset="UTF-8">
+</head>
+<body onload="countTime()">
+<!--先编写好网页布局-->
+<h1>该页面可能会跳转哦！</h1>
+<p><span id="times"></span>秒后回到主页</p>
+<a href="#">点我进入下一页面</a>
+<a onclick="jump()" href="javascript:jump())">返回</a>
+<script type="text/javascript">
+    var num = 6;
+    function countTime() {
+        //获取Id为times的值
+        document.getElementById("times").value=num;
+        num = num - 1;
+        document.getElementById("times").innerHTML=num;
+        setTimeout("countTime()", 1000);
+        //将Id为times显示在页面上的内容替换为变量num
+
+        if( num == 1 ) {
+            location.assign("https://www.baidu.com");
+        }
+    }
+    function jump() {
+        window.history.back();
+    }
+
+</script>
+</body>
+</html>

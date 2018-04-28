@@ -1,0 +1,182 @@
+*{margin: 0;
+    padding: 0;
+}
+.content{
+    width:1350px;
+    height: 800px;
+    margin:0 auto;
+}
+.logo{
+    text-align: center;
+}
+.form-box{
+    width:40%;
+    height:350px;
+    background-color:white;
+    margin: 1px auto;
+}
+.logo {
+    padding: 80px 0 10px;
+}
+h1{
+    color:black;
+    font-family: "Ping Hei";
+    font-size:26px;
+    text-align: center;
+    padding: 10px;
+    font-weight:100;
+}
+.content p {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin: 10px auto 20px auto;
+}
+.qr-text p{
+    color: #888888;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.form-box .input-text {
+    border:1px solid gainsboro;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    height: 26px;
+    width: 60%;
+    display: block;
+}
+.checkcode .input-text {
+    margin: 0 18px 0 0;
+    float: left;
+    border:1px solid gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+    height: 26px;
+    width: 45%;
+    display: block;
+}
+.form-box .checkcode{
+    margin-left:97px;
+}
+.form-box .input-button{
+    width: 64%;
+    height: 48px;
+    border:none;
+    border-radius:5px;
+    padding: 13px;
+    display: block;
+    margin: 5px auto;
+    background-color: #3da8f6;
+    color: white;
+    font-size: 17px;
+    font-family: "Microsoft YaHei Light";
+    transition: 1s;
+    -webkit-transition: background-color 1s;
+}
+.form-box .input-button:hover{
+    background-color: #348fd1;
+    cursor: pointer;
+}
+/*新建模拟checkbox*/
+.form-box .rm .icon{
+    background-color: #3da8f6;
+    width:15px;
+    height:15px;
+    border-radius:2px;
+    position:relative;
+    display:inline-block;
+    top: 2px;
+}
+.form-box .rm{
+    width: 63%;
+    margin: 0 auto;
+    display: block;
+}
+/*.checkcode canvas{*/
+/*width:100px;*/
+/*height:42px;*/
+/*padding:3px;*/
+/*z-index:0;*/
+/*background: #ece8e5;*/
+/*}*/
+.content .text-c p {
+    text-align: center;
+    color: #888888;
+    font-size:small;
+}
+/*登录按钮背景颜色缓慢变化*/
+.rm .fg-passward{
+    float: right;
+    text-decoration: none;
+    color:#888888;
+    transition: 1s;
+    -webkit-transition: color 1s;
+}
+.rm .fg-passward:hover{
+    color: #3da8f6;
+}
+/*icon选中动画效果*/
+.rm label .icon:before,
+.rm label .icon:after{
+    content:'';
+    width:10px;
+    height:2px;
+    position: absolute;
+    background: #ffffff;
+    -webkit-transition:all .2s ease-in-out 0s;
+    transition:all .2s ease-in-out 0s;
+}
+.rm .check:checked + label .icon:before {
+    -webkit-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg);
+}
+.rm .check:checked + label .icon:after {
+    -webkit-transform: scale(1) rotate(-45deg);
+    transform: scale(1) rotate(-45deg);
+}
+.rm label .icon:before {
+    left:3px;
+    width:5px;
+    bottom:6px;
+    -webkit-transform:scale(0) rotate(0);
+    -ms-transform:scale(0) rotate(0);
+    transform:scale(0) rotate(0);
+}
+.rm label .icon:after {
+    top:6px;
+    right:0;
+    -webkit-transform:scale(0) rotate(0);
+    -ms-transform:scale(0) rotate(0);
+    transform:scale(0) rotate(0);
+}
+.rm .check:checked label {
+    color: #3da8f6;
+}
+input::-webkit-input-placeholder{
+    color: #dcdcdc;
+    font-size:17px;
+}
+.form-box .rm .check{
+    display:none;
+}
+.qr-logo {
+    margin: 190px auto 0px auto;
+    width: 45%;
+}
+.apple {
+    float: left;
+}
+.android {
+    float: right;
+}
+.qr-code {
+    margin: 50px auto;
+    width:54%;
+}
+.qr-text {
+    margin: 75px auto;
+    width: 56%;
+}
