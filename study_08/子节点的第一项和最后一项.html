@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+</head>
+<body>
+<div id="con"><p>javascript</p><div>jQuery</div><h5>PHP</h5></div>
+<script type="text/javascript">
+    var x = document.getElementById("con");
+    document.write("div的第一个子节点名称为：" + x.firstChild.nodeName + "<br>"
+                    + "子节点的值为：" + x.firstChild.nodeValue + "<br>"
+                    + "子节点的类型为：" + x.firstChild.nodeType + "<br>"
+                    + "子节点的内容为：" + x.firstChild.innerHTML + "<br>"
+                    );
+    document.write("<br>");
+    document.write("div的最后一个子节点名称为：" + x.lastChild.nodeName + "<br>"
+                    + "子节点值为：" + x.lastChild.nodeValue + "<br>"
+                    + "子节点类型为：" + x.lastChild.nodeType + "<br>"
+                    + "子节点的内容为:" + x.lastChild.innerHTML + "<br>"
+                    );
+</script>
+</body>
+</html>

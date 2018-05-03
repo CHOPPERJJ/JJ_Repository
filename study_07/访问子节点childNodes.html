@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>访问子节点childNodes</title>
+</head>
+<body>
+<div>
+    javascript
+    <p>javascript</p>
+    <div>jQuery</div>
+    <h5>PHP</h5>
+</div>
+<script type="text/javascript">
+    var divn = document.getElementsByTagName("div")[0].childNodes;
+        document.write("DIV的子节点个数为：" + divn.length + "<br>");
+        document.write("DIV的子节点类型为：" + divn[0].nodeType + "<br>");
+        document.write("<br>");
+    for (i=0; i < divn.length; i++) {
+        document.write("节点" + (i+1) + "属性为：" + divn[i].nodeType + "<br>");
+        document.write("节点" + (i+1) + "名称为：" + divn[i].nodeName + "<br>");
+        document.write("节点" + (i+1) + "值为：" + divn[i].nodeValue + "<br>");
+        document.write("<br>");
+    }
+    document.write("注意：节点3中的p标签中的返回的nodeValue的值是null，说明标签中间的JavaScript并不是元素值");
+</script>
+</body>
+</html>
